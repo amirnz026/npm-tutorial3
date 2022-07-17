@@ -6,10 +6,15 @@
   },
   "main": "server.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "https://idontknow/todo.git"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
